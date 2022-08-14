@@ -1,1 +1,0 @@
-data = ["<b>Item Scam in HUN</b><br><br>Bought a dancing peppa pig. It did not dance. The one they put on display was controlled by fishing line<br>Id recommend always checking before buyinh<br>     by your friend 08:14:22 9:33 UTC",46.541219, 19.072769]

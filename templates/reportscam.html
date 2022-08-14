@@ -1,0 +1,272 @@
+<!doctype html>
+  <html>
+
+    
+    <head>
+    <title>Scam Report</title>
+  </head>
+
+    
+    <body>
+
+      <form action="{{ url_for('report')}}" method="post">
+        <p>Name:</p>
+        <input type="text" id="name" name="name" placeholder="Name" required=true><br>
+
+        <p>title</p>
+        <input type="text" name="title" placeholder="eg. Item Scam" required=true><br>
+          
+        <p>What/how did it happen?</p>
+        <input type="text" name="how" placeholder="Help future victims understand what exactly happened" required=true style="height:200px;width:350px"><br>
+        
+
+        <p>Select the country it happened in. <a href="https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes#Current_ISO_3166_country_codes" target="_blank">Here is the list of iso codes</a></p>
+        <select name="country">
+          <option>AFG</option>
+  <option>ALA</option>
+  <option>ALB</option>
+  <option>DZA</option>
+  <option>ASM</option>
+  <option>AND</option>
+  <option>AGO</option>
+  <option>AIA</option>
+  <option>ATA</option>
+  <option>ATG</option>
+  <option>ARG</option>
+  <option>ARM</option>
+  <option>ABW</option>
+  <option>AUS</option>
+  <option>AUT</option>
+  <option>AZE</option>
+  <option>BHS</option>
+  <option>BHR</option>
+  <option>BGD</option>
+  <option>BRB</option>
+  <option>BLR</option>
+  <option>BEL</option>
+  <option>BLZ</option>
+  <option>BEN</option>
+  <option>BMU</option>
+  <option>BTN</option>
+  <option>BOL</option>
+  <option>BES</option>
+  <option>BIH</option>
+  <option>BWA</option>
+  <option>BVT</option>
+  <option>BRA</option>
+  <option>IOT</option>
+  <option>BRN</option>
+  <option>BGR</option>
+  <option>BFA</option>
+  <option>BDI</option>
+  <option>CPV</option>
+  <option>KHM</option>
+  <option>CMR</option>
+  <option>CAN</option>
+  <option>CYM</option>
+  <option>CAF</option>
+  <option>TCD</option>
+  <option>CHL</option>
+  <option>CHN</option>
+  <option>CXR</option>
+  <option>CCK</option>
+  <option>COL</option>
+  <option>COM</option>
+  <option>COG</option>
+  <option>COD</option>
+  <option>COK</option>
+  <option>CRI</option>
+  <option>CIV</option>
+  <option>HRV</option>
+  <option>CUB</option>
+  <option>CUW</option>
+  <option>CYP</option>
+  <option>CZE</option>
+  <option>DNK</option>
+  <option>DJI</option>
+  <option>DMA</option>
+  <option>DOM</option>
+  <option>ECU</option>
+  <option>EGY</option>
+  <option>SLV</option>
+  <option>GNQ</option>
+  <option>ERI</option>
+  <option>EST</option>
+  <option>SWZ</option>
+  <option>ETH</option>
+  <option>FLK</option>
+  <option>FRO</option>
+  <option>FJI</option>
+  <option>FIN</option>
+  <option>FRA</option>
+  <option>GUF</option>
+  <option>PYF</option>
+  <option>ATF</option>
+  <option>GAB</option>
+  <option>GMB</option>
+  <option>GEO</option>
+  <option>DEU</option>
+  <option>GHA</option>
+  <option>GIB</option>
+  <option>GRC</option>
+  <option>GRL</option>
+  <option>GRD</option>
+  <option>GLP</option>
+  <option>GUM</option>
+  <option>GTM</option>
+  <option>GGY</option>
+  <option>GIN</option>
+  <option>GNB</option>
+  <option>GUY</option>
+  <option>HTI</option>
+  <option>HMD</option>
+  <option>VAT</option>
+  <option>HND</option>
+  <option>HKG</option>
+  <option>HUN</option>
+  <option>ISL</option>
+  <option>IND</option>
+  <option>IDN</option>
+  <option>IRN</option>
+  <option>IRQ</option>
+  <option>IRL</option>
+  <option>IMN</option>
+  <option>ISR</option>
+  <option>ITA</option>
+  <option>JAM</option>
+  <option>JPN</option>
+  <option>JEY</option>
+  <option>JOR</option>
+  <option>KAZ</option>
+  <option>KEN</option>
+  <option>KIR</option>
+  <option>PRK</option>
+  <option>KOR</option>
+  <option>KWT</option>
+  <option>KGZ</option>
+  <option>LAO</option>
+  <option>LVA</option>
+  <option>LBN</option>
+  <option>LSO</option>
+  <option>LBR</option>
+  <option>LBY</option>
+  <option>LIE</option>
+  <option>LTU</option>
+  <option>LUX</option>
+  <option>MAC</option>
+  <option>MDG</option>
+  <option>MWI</option>
+  <option>MYS</option>
+  <option>MDV</option>
+  <option>MLI</option>
+  <option>MLT</option>
+  <option>MHL</option>
+  <option>MTQ</option>
+  <option>MRT</option>
+  <option>MUS</option>
+  <option>MYT</option>
+  <option>MEX</option>
+  <option>FSM</option>
+  <option>MDA</option>
+  <option>MCO</option>
+  <option>MNG</option>
+  <option>MNE</option>
+  <option>MSR</option>
+  <option>MAR</option>
+  <option>MOZ</option>
+  <option>MMR</option>
+  <option>NAM</option>
+  <option>NRU</option>
+  <option>NPL</option>
+  <option>NLD</option>
+  <option>NCL</option>
+  <option>NZL</option>
+  <option>NIC</option>
+  <option>NER</option>
+  <option>NGA</option>
+  <option>NIU</option>
+  <option>NFK</option>
+  <option>MKD</option>
+  <option>MNP</option>
+  <option>NOR</option>
+  <option>OMN</option>
+  <option>PAK</option>
+  <option>PLW</option>
+  <option>PSE</option>
+  <option>PAN</option>
+  <option>PNG</option>
+  <option>PRY</option>
+  <option>PER</option>
+  <option>PHL</option>
+  <option>PCN</option>
+  <option>POL</option>
+  <option>PRT</option>
+  <option>PRI</option>
+  <option>QAT</option>
+  <option>REU</option>
+  <option>ROU</option>
+  <option>RUS</option>
+  <option>RWA</option>
+  <option>BLM</option>
+  <option>SHN</option>
+  <option>KNA</option>
+  <option>LCA</option>
+  <option>MAF</option>
+  <option>SPM</option>
+  <option>VCT</option>
+  <option>WSM</option>
+  <option>SMR</option>
+  <option>STP</option>
+  <option>SAU</option>
+  
+        </select><br>
+
+        <p>Coordinates, decimals are welcome! Just estimate if you dont know the exact coordinates <a href="">How to get coordinates of a place</a></p>
+        <label for="lat">Latitude</label>
+        <input type="number" name="lat" required=true>
+        <label for="lon">Longitude</label>
+        <input type="number" name="lon" required=true> <br><br>
+
+        <!--<p>Who are these scams targeted to</p>
+        <input type="checkbox" name="children" id="c">
+        <label for="children">Children</label> <br>
+          
+        <input type="checkbox" name="teens" id="t">
+        <label for="teens">Teens</label> <br>
+          
+        <input type="checkbox" name="young">
+        <label for="young"id="y">Young Adults<label> <br>
+  
+        <input type="checkbox" name="middle" id="mi">
+        <label for="middle">Middle Aged Adults</label> <br>
+  
+        <input type="checkbox" name="senior" id="s">
+        <label for="senior">Seniors</label> <br>
+
+        <input type="checkbox" name=" female" id="f">
+        <label for="female">Female</label> <br>
+
+        <input type="checkbox" name="male" id="m">
+        <label for="male">Male</label> <br>
+  
+        <input type="checkbox"id="o">
+        <label for="other">Other<input type="txt" name="other-text" placeholder="other demographics" id="oth"></label>
+
+      <script>
+        var dqs = document.querySelector;
+        const c=dqs('#c'),t=dqs('#t'),y=dqs('y'),mi=dqs('#mi'), s=dqs('#s'),f=dqs('#f'),m=dqs('#m'),o=dqs('#o');
+        if (c) {
+          db[1].append("children")
+        }
+    </script>-->
+
+        
+      <p>Any thoughts on how to avoid this in the future</p>
+        <input type="text" name="avoid" style="height:200px;width:350px" required=true placeholder="Id recommend.."><br>
+
+      <input type="reset" value="Restart">
+            
+      <input type="submit" value="Next >" onclick="window.location.replace('{{url_for('index')}}');">
+
+    </body>
+</html>
